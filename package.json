@@ -1,0 +1,13 @@
+{
+  "name": "aws-lambda-utility-layer",
+  "version": "1.0.0",
+  "description": "Utility functions to install in an AWS Lambda Layer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["aws lambda", "lambda layer", "utils", "utilities", "lambda"],
+  "repository": "benrosen/aws-lambda-utility-layer",
+  "author": "benrosen",
+  "license": "CC0"
+}
