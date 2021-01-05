@@ -1,3 +1,0 @@
-TODO create docs script
-TODO configure github pages to host /docs
-TODO use AWS typedefs in documentation

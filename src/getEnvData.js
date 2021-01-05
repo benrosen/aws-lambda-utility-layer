@@ -11,7 +11,5 @@ module.exports = function getEnvData(environment, key) {
   if (data) {
     return data;
   }
-  // TODO extract to custom error class
-  // TODO document @throws custom error type
   throw new Error(`Function requires environment variable: '${key}'`);
 };
