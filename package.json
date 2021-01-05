@@ -6,8 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["aws lambda", "lambda layer", "utils", "utilities", "lambda"],
+  "keywords": [
+    "aws lambda",
+    "lambda layer",
+    "utils",
+    "utilities",
+    "lambda"
+  ],
   "repository": "benrosen/aws-lambda-utility-layer",
   "author": "benrosen",
-  "license": "CC0"
+  "license": "CC0",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
