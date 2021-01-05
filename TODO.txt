@@ -1,6 +1,6 @@
 TODO configure test files
-TODO configure jest as dev dependency
 TODO create test script
 TODO create docs script
 TODO configure github pages to host /docs
 TODO use AWS typedefs in documentation
+TODO write tests
