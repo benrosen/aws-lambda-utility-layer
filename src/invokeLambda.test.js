@@ -1,7 +1,7 @@
-const { invokeLambda } = require("./invokeLambda");
+const invokeLambda = require("./invokeLambda");
 
 describe("The invokeLambda function", () => {
-  it("should arbitrarily pass.", () => {
-    expect(true).toBe(true);
+  it("should be defined.", () => {
+    expect(invokeLambda).toBeDefined();
   });
 });
