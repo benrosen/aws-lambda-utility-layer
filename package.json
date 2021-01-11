@@ -1,6 +1,6 @@
 {
   "name": "aws-lambda-utility-layer",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Utility functions to install in an AWS Lambda Layer.",
   "main": "./src/index.js",
   "scripts": {
