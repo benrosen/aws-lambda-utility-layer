@@ -1,5 +1,9 @@
-const { expect } = require("@jest/globals");
-const { createRecord, getEnvData, invokeLambda } = require("./index.js");
+const {
+  createRecord,
+  getEnvData,
+  invokeLambda,
+  updateRecord,
+} = require("./index.js");
 
 describe("The aws-lambda-utility-layer package", () => {
   describe("createRecord function", () => {
@@ -17,6 +21,12 @@ describe("The aws-lambda-utility-layer package", () => {
   describe("invokeLambda function", () => {
     it("should be defined.", () => {
       expect(invokeLambda).toBeDefined();
+    });
+  });
+
+  describe("updateRecord function", () => {
+    it("should be defined.", () => {
+      expect(updateRecord).toBeDefined();
     });
   });
 });
