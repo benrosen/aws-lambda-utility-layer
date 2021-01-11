@@ -1,6 +1,6 @@
-const updateRecord = require("./createRecord.js");
+const updateRecord = require("./updateRecord.js");
 
-describe("The createRecord function", () => {
+describe("The updateRecord function", () => {
   it("should be defined.", () => {
     expect(updateRecord).toBeDefined();
   });
