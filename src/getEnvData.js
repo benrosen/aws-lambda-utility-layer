@@ -1,3 +1,5 @@
+const { ArgumentNullError, NotFoundError } = require("common-errors");
+
 /**
  * Get data from the Lambda environment.
  *
@@ -8,19 +10,19 @@
  */
 module.exports = function getEnvData(environment, keys) {
   if (!environment) {
-    throw new TypeError("Missing required argument: environment.");
+    throw new ArgumentNullError("environment");
   }
 
   if (!keys) {
-    throw new TypeError("Missing required argument: keys.");
+    throw new ArgumentNullError("keys");
   }
 
   const getData = (key) => {
-    const data = environment[key];
-    if (data) {
-      return data;
+    if (!(key in environment)) {
+      throw new NotFoundError(key);
     }
-    throw new Error(`Missing required environment variable: '${key}'`);
+
+    return environment[key];
   };
 
   if (keys.length === 1) {
